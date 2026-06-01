@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.container h2  {
+    margin: auto;
+    text-align: center;
+    padding: 0 0 2svw 0;
+}
+
+header {
+    border-bottom: 1px solid #2a2a2a;
+    padding: 20px 0;
+    background: #181818;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.donation-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.donation-text {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.copy-btn {
+    background: #22c55e;
+    color: black;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.copy-btn:hover {
+    opacity: 0.8;
+}
+
+.copy-message {
+    color: #22c55e;
+    font-size: 14px;
+    display: none;
+}
+
+.title-site .container {
+    margin-top: 3svw;
+}
+
+.title-site .container p {
+    margin-top: 1.5svw;
+}
+
+.categories {
+    padding: 50px 0;
+}
+
+.category-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-buttons button {
+    background: #1f1f1f;
+    border: 1px solid #333;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.category-buttons button:hover {
+    background: #22c55e;
+    color: black;
+    border-color: #22c55e;
+}
+
+.about-site {
+    padding: 20px 0 60px;
+}
+
+.about-site h1 {
+    font-size: 42px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.about-site p {
+    color: #b0b0b0;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-area {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto 30px;
+}
+
+.search-area input {
+  width: 100%;
+  background: #1a1a1a;
+  border: 1px solid #2f2f2f;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-area input:focus {
+  border-color: #22c55e;
+}
+
+.warning-text {
+  color: #999;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.products {
+    padding-bottom: 70px;
+}
+
+.product-list {
+    display: none;
+    margin-top: 30px;
+}
+
+.product-list.active {
+    display: block;
+}
+
+.product-item {
+    background: #1a1a1a;
+    border: 1px solid #2f2f2f;
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+}
+
+.product-item h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.price {
+    color: #22c55e;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.store-link {
+    background: #22c55e;
+    color: black;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.store-link:hover {
+    opacity: 0.8;
+}
+
+footer {
+    border-top: 1px solid #2a2a2a;
+    text-align: center;
+    padding: 25px 0;
+    color: #777;
+    background: #181818;
+}
