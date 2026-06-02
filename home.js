@@ -11,7 +11,7 @@ function showCategory(categoryId) {
 
 function copyPix() {
 
-    const pix = "seu-pix@email.com";
+    const pix = "ofertascelularoficial@gmail.com";
 
     navigator.clipboard.writeText(pix);
 
