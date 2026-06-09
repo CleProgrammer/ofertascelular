@@ -187,6 +187,14 @@ header {
    6. ITEM DE PRODUTO INDIVIDUAL (Estilo Premium)
    ========================================================================== */
 .product-item {
+    /* COLOCAR NAS OUTRAS PÁGINAS - IMAGEM DOS PRODUTOS */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    /**/
+
+
     background: #23272c;
     border: 1px solid #333942;
     padding: 30px;
@@ -219,6 +227,21 @@ header {
 .product-item:hover::before {
     transform: scaleX(1);
 }
+
+
+
+
+/* COLOCAR NAS OUTRAS PÁGINAS - IMAGEM DOS PRODUTOS */
+.product-image img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+/**/
+
+
+
 
 .product-item h3 {
     font-size: 22px;
@@ -282,4 +305,24 @@ footer .container {
     align-items: center;
     width: 100%;
 }
+
+
+
+/* Celulares */
+@media (max-width: 768px) {
+  .product-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-image img {
+    width: 220px;
+    max-width: 100%;
+  }
+
+  .product-details {
+    width: 100%;
+  }
+}
+
 
