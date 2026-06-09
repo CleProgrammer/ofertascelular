@@ -4,300 +4,272 @@
   <meta charset="UTF-8">
   <meta name="theme-color" content="#111111">
   
-  <meta name="description" content="Encontre promoções de celulares Samsung, Xiaomi, Motorola e iPhone com os melhores preços das principais lojas do Brasil.">
+  <meta name="description" content="Encontre ofertas de celulares, notebooks, PCs gamer e TVs com os melhores preços das principais lojas do Brasil.">
 
-  <meta name="keywords" content="promoção celular, celular barato, iphone promoção, samsung barato, xiaomi promoção, smartphone promoção">
+  <meta name="keywords" content="promoção celular, celular barato, iphone promoção, samsung barato, xiaomi promoção, smartphone promoção, smartv, notebook, pc gamer">
 
   <meta name="author" content="Ofertas Celular">
 
   <meta name="robots" content="index, follow">
 
-  <meta property="og:title" content="Ofertas Celular - Promoções de Smartphones">
+  <meta property="og:title" content="Ofertas Celular - Celulares, Notebooks, PCs Gamer e TVs com os melhores preços">
 
-  <meta property="og:description" content="As melhores promoções de celulares Samsung, Xiaomi, Motorola e iPhone.">
+  <meta property="og:description" content="Encontre promoções de celulares, notebooks, PCs gamer e TVs com os melhores preços das principais lojas do Brasil.">
 
   <meta property="og:type" content="website">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--<link rel="icon" href="mascote.ico" type="image/png">-->
   <link rel="icon" href="/mascote.ico">
 
   <link rel="canonical" href="https://ofertascelular.com.br">
 
-  <title>Ofertas Celular - Promoções de Celulares e Smartphones Samsung, Iphone, Xiaomi e Motorola</title>
+  <title>Ofertas Celular - Celulares, Notebooks, PCs Gamer e TVs com os melhores preços</title>
   <link rel="stylesheet" href="home.css">
 
-  <!-- Google tag (gtag.js) -->
-  <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q524M0K7JR"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-Q524M0K7JR');
-  </script>-->
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Ofertas Celular",
-    "url": "https://ofertascelular.com.br",
-    "description": "Promoções de celulares Samsung, iPhone, Xiaomi e Motorola com preços atualizados diariamente.",
-    "inLanguage": "pt-BR"
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Promoções de Celulares Samsung, iPhone, Xiaomi e Motorola",
-    "url": "https://ofertascelular.com.br",
-    "description": "Encontre promoções de celulares baratos, ofertas de smartphones e descontos atualizados diariamente nas principais lojas do Brasil.",
-    "inLanguage": "pt-BR"
-  }
-  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q524M0K7JR"></script>
+  <script src="/analytics.js"></script>
 
 </head>
 
 <body>
   <header>
     <div class="container header-content">
-
-      <div class="logo">
-        OFERTAS CELULAR
-      </div>
-
+      <div class="logo">OFERTAS CELULAR</div>
       <div class="donation-area">
-
-        <span class="donation-text">
-          Doações para manter o site
-        </span>
-
-        <button class="copy-btn" onclick="copyPix()">
-          Copiar Pix
-        </button>
-
-        <span id="copy-message" class="copy-message">
-          Copiado!
-        </span>
-
+        <span class="donation-text">Doações para manter o site</span>
+        <button class="copy-btn" onclick="copyPix()">Copiar Pix</button>
+        <span id="copy-message" class="copy-message">Copiado!</span>
       </div>
-
     </div>
   </header>
 
   <section class="title-site">
-    <div class="container">
-
-      <h1>Comprar Celular Barato: Promoções de sites confiáveis de Samsung, iPhone, Xiaomi e Motorola</h1>
-
+    <div class="container title-content">
+      <h1>Ofertas de Eletrônicos: Celulares, Notebooks, PCs Gamer e TVs com os melhores preços</h1>
+      <img src="./imagens/image-website.png" alt="Mascote Ofertas Celular" class="hero-image">
     </div>
   </section>
 
   <section class="categories">
     <div class="container">
-
       <div class="category-buttons">
         <button onclick="showCategory('iphone')">iPhone</button>
         <button onclick="showCategory('samsung')">Samsung</button>
         <button onclick="showCategory('xiaomi')">Xiaomi</button>
         <button onclick="showCategory('motorola')">Motorola</button>
+        <button onclick="showCategory('smarttv')">Smart Tv</button>
+        <button onclick="showCategory('pcgamer')">Pc Gamer</button>
+        <button onclick="showCategory('notebook')">Notebook</button>
       </div>
-
     </div>
   </section>
 
   <section class="products">
     <div class="search-area">
-      <input 
-        type="text" 
-        id="searchInput"
-        placeholder="Pesquisar celular..."
-        onkeyup="searchProducts()"
-      >
+      <input type="text" id="searchInput" placeholder="Pesquisar itens..." onkeyup="searchProducts()">
     </div>
 
     <div class="container">
       <p class="warning-text">
-        Os preços podem estar diferentes desde a última atualização do site.
-        <br>
-        Não vendemos celulares. Apenas divulgamos promoções.
-        <br>
+        Os preços podem estar diferentes desde a última atualização do site.<br>
+        Não vendemos os itens. Apenas divulgamos ofertas.<br>
         Comprando pelo link, você ajuda a manter o site.
       </p>
 
       <div id="iphone" class="product-list active">
-
         <div class="product-item">
+          <div class="product-image-container">
+            <img src="./imagens/iphone-16e.webp" alt="iPhone 16e" class="product-thumb">
+          </div>
           <h3>iPhone 16e (128 GB) - Preto</h3>
-
           <div class="product-info">
-            <span class="price">R$ 3.360,54 se aplicar cupom de R$ 100 OFF</span>
-
-            <a target="_blank" rel="nofollow" href="https://www.mercadolivre.com.br/iphone-16e-128-gb-preto-distribuidor-autorizado/p/MLB1046215784?pdp_filters=item_id%3AMLB3986439067&matt_tool=38524122#origin=share&sid=share&wid=MLB3986439067&action=copy" class="store-link">
-              Mercado Livre
-            </a>
+            <span class="price">R$ 3.406,99 à vista no Pix</span>
+            <a target="_blank" rel="sponsored noopener noreferrer" href="https://meli.la/1btQmdu" class="store-link">Mercado Livre</a>
           </div>
         </div>
 
         <div class="product-item">
-          <h3>Apple iPhone 15 (128 GB) - Preto - Distribuidor Autorizado</h3>
-
+          <div class="product-image-container">
+            <img src="./imagens/iphone-15.webp" alt="iPhone 15" class="product-thumb">
+          </div>
+          <h3>Apple iPhone 15 (128 GB) - Preto</h3>
           <div class="product-info">
-            <span class="price">R$ 3.844,10 se aplicar cupom de R$ 250 OFF</span>
-
-            <a target="_blank" rel="nofollow" href="https://www.mercadolivre.com.br/apple-iphone-15-128-gb-preto-distribuidor-autorizado/p/MLB1027172677?pdp_filters=item_id%3AMLB4408548448&matt_tool=38524122#origin=share&sid=share&wid=MLB4408548448&action=copy" class="store-link">
-              Mercado Livre
-            </a>
+            <span class="price">R$ 4.094 à vista no Pix</span>
+            <a target="_blank" rel="sponsored noopener noreferrer" href="https://meli.la/2HvvuCq" class="store-link">Mercado Livre</a>
           </div>
         </div>
 
-        <div class="product-item"><!--OUTRO-->
-          <h3>Usado: Iphone 14 128 Gb Preto - Regular</h3>
-
+        <div class="product-item">
+          <div class="product-image-container">
+            <img src="./imagens/iphone14.webp" alt="iPhone 14" class="product-thumb">
+          </div>
+          <h3>Apple Iphone 14 128gb Meia-noite</h3>
           <div class="product-info">
-            <span class="price">R$ 2.224,84 à vista no Pix</span>
-
-            <a target="_blank" rel="nofollow" href="https://www.kabum.com.br/produto/893313" class="store-link">
-              Kabum
-            </a>
+            <span class="price">R$ 3.237 à vista</span>
+            <a target="_blank" rel="nofollow" href="https://www.kabum.com.br/produto/893313" class="store-link">Kabum</a>
           </div>
         </div>
-
       </div>
 
       <div id="samsung" class="product-list">
-
         <div class="product-item">
+          <div class="product-image-container">
+            <img src="./imagens/samsung a07.webp" alt="Samsung A07" class="product-thumb">
+          </div>
           <h3>Smartphone Samsung A07 128GB Preto 4GB RAM</h3>
-
           <div class="product-info">
-            <span class="price">R$ 576,56 se aplicar cupom de R$ 65 OFF</span>
-
-            <a target="_blank" rel="nofollow" href="https://pt.aliexpress.com/item/1005010101287412.html?spm=a2g0o.productlist.main.1.5c56ZqReZqReiu&algo_pvid=21322743-d2ad-4526-959b-9a421719a68b&algo_exp_id=21322743-d2ad-4526-959b-9a421719a68b-0&pdp_ext_f=%7B%22order%22%3A%221764%22%2C%22spu_best_type%22%3A%22price%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21BRL%21899.00%21641.56%21%21%21899.00%21641.56%21%402101f70717804096445672409ec39f%2112000051148500467%21sea%21BR%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A6617785%3Bm03_new_user%3A-29895%3BpisId%3A5000000208110741&curPageLogUid=Zm6caR9DtLBn&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005010101287412%7C_p_origin_prod%3A" class="store-link">
-              AliExpress
-            </a>
+            <span class="price">R$ 589,90 à vista no Pix</span>
+            <a target="_blank" rel="sponsored noopener noreferrer" href="https://meli.la/1JwNwYS" class="store-link">Mercado Livre</a>
           </div>
         </div>
 
         <div class="product-item">
+          <div class="product-image-container">
+            <img src="./imagens/samsung a17.webp" alt="Galaxy A17" class="product-thumb">
+          </div>
           <h3>Celular Samsung Galaxy A17 Com Ia, 128gb, 4gb Ram</h3>
-
           <div class="product-info">
-            <span class="price">R$ 804,90 à vista no Pix</span>
-
-            <a target="_blank" rel="nofollow" href="https://www.mercadolivre.com.br/celular-samsung-galaxy-a17-com-ia-128gb-4gb-ram-cm-de-50mp-tela-de-67-nfc-ip54-cinza/p/MLB55044657?pdp_filters=item_id%3AMLB4582643419&matt_tool=38524122#origin=share&sid=share&wid=MLB4582643419&action=copy" class="store-link">
-              Mercado Livre
-            </a>
+            <span class="price">R$ 798,20 à vista no Pix</span>
+            <a target="_blank" rel="sponsored noopener noreferrer" href="https://meli.la/14pFmb6" class="store-link">Mercado Livre</a>
           </div>
         </div>
 
         <div class="product-item">
+          <div class="product-image-container">
+            <img src="./imagens/samsung a36.webp" alt="Galaxy A36" class="product-thumb">
+          </div>
           <h3>Smartphone Samsung Galaxy A36 5g 128gb 6gb Ram</h3>
-
           <div class="product-info">
             <span class="price">R$1.412,10 à vista OFF no Pix</span>
-
-            <a target="_blank" rel="nofollow" href="https://www.mercadolivre.com.br/smartphone-samsung-galaxy-a36-5g-128gb-6gb-ram-cmera-tripla-de-ate-50mp-selfie-de-12mp-ip67-super-amoled-67-nfc-recursos-ai-android-e-seguranca-snapdragon-preto/p/MLB47115842?pdp_filters=item_id%3AMLB6756182602&matt_tool=38524122#origin=share&sid=share&wid=MLB6756182602&action=copy" class="store-link">
-              Mercado Livre
-            </a>
+            <a target="_blank" rel="sponsored noopener noreferrer" href="https://meli.la/15smi6Q" class="store-link">Mercado Livre</a>
           </div>
         </div>
 
         <div class="product-item">
-          <h3>Samsung Galaxy S25 5G 256GB Galaxy AI Prata 6,2" 12GB RAM</h3>
-
+          <div class="product-image-container">
+            <img src="./imagens/samsung s25.webp" alt="Galaxy S25" class="product-thumb">
+          </div>
+          <h3>Celular Samsung Galaxy S25 FE 5G, 128GB, 8GB</h3>
           <div class="product-info">
-            <span class="price">R$ 3.722,22 se aplicar cupom de R$ 480 OFF</span>
-
-            <a target="_blank" rel="nofollow" href="https://pt.aliexpress.com/item/1005008454706012.html?spm=a2g0o.productlist.main.2.3f8cv2tvv2tvv3&algo_pvid=36be2bd8-f13b-4f18-b745-262d99b7bec4&algo_exp_id=36be2bd8-f13b-4f18-b745-262d99b7bec4-1&pdp_ext_f=%7B%22order%22%3A%222143%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21BRL%217499.00%214202.22%21%21%217499.00%214202.22%21%402103129017804097589628942e7f18%2112000045208094912%21sea%21BR%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3A6617785%3Bm03_new_user%3A-29895%3BpisId%3A5000000208115646&curPageLogUid=L3QoXOtQoPIK&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005008454706012%7C_p_origin_prod%3A" class="store-link">
-              AliExpress
-            </a>
+            <span class="price">R$ 2.685,60 à vista no Pix</span>
+            <a target="_blank" rel="sponsored noopener noreferrer" href="https://amzn.to/4vBka5B" class="store-link">AliExpress</a>
           </div>
         </div>
-
       </div>
 
       <div id="xiaomi" class="product-list">
-
         <div class="product-item">
+          <div class="product-image-container">
+            <img src="./imagens/Celular-Xiaomi-Redmi-Note-15-Pro-De-256gb-8GB-Ram.webp" alt="Redmi Note 15 Pro" class="product-thumb">
+          </div>
           <h3>Celular Xiaomi Redmi Note 15 Pro De 256gb 8GB Ram</h3>
-
           <div class="product-info">
             <span class="price">R$ 1.643,40 à vista no Pix</span>
-
-            <a target="_blank" rel="nofollow" href="https://www.kabum.com.br/produto/999585" class="store-link">
-              Kabum
-            </a>
+            <a target="_blank" rel="nofollow" href="https://www.kabum.com.br/produto/999585" class="store-link">Kabum</a>
           </div>
         </div>
 
         <div class="product-item">
-          <h3>Smatphone Xiaomi Poco X8 Pro 256gb 8gb Ram</h3>
-
+          <div class="product-image-container">
+            <img src="./imagens/poco x8 pro.webp" alt="Poco X8 Pro" class="product-thumb">
+          </div>
+          <h3>Celular Xiaomi Poco X8 Pro 8gb Ram 512gb</h3>
           <div class="product-info">
-            <span class="price">R$ 2.206 à vista</span>
-
-            <a target="_blank" rel="nofollow" href="https://www.mercadolivre.com.br/smatphone-xiaomi-poco-x8-pro-256gb-8gb-ram-nfc-dual-sim/p/MLB69439259?pdp_filters=item_id%3AMLB6879736408&matt_tool=38524122#origin=share&sid=share&wid=MLB6879736408&action=copy" class="store-link">
-              Mercado Livre
-            </a>
+            <span class="price">R$ 2.512 à vista</span>
+            <a target="_blank" rel="sponsored noopener noreferrer" href="https://meli.la/2xnDmdZ" class="store-link">Mercado Livre</a>
           </div>
         </div>
-
-
       </div>
 
       <div id="motorola" class="product-list">
-
         <div class="product-item">
+          <div class="product-image-container">
+            <img src="./imagens/motorola edge 60.webp" alt="Edge 60 Neo" class="product-thumb">
+          </div>
           <h3>Smartphone Motorola Edge 60 Neo 5G - 256GB 24GB</h3>
-
           <div class="product-info">
             <span class="price">R$ 1.889,10 à vista no Pix</span>
-
-            <a target="_blank" rel="nofollow" href="https://www.mercadolivre.com.br/smartphone-motorola-edge-60-neo-5g-256gb-24gb-12gb-ram-12gb-ram-boost-50mp-sony-camera-moto-ai-e-tela-15k-super-hd-cinza/p/MLB58684601?pdp_filters=item_id%3AMLB5806784320&matt_tool=38524122#origin=share&sid=share&wid=MLB5806784320&action=copy" class="store-link">
-              Mercado Livre
-            </a>
+            <a target="_blank" rel="sponsored noopener noreferrer" href="https://meli.la/2bVhJc5" class="store-link">Mercado Livre</a>
           </div>
         </div>
 
         <div class="product-item">
+          <div class="product-image-container">
+            <img src="./imagens/moto g86.webp" alt="Moto G86" class="product-thumb">
+          </div>
           <h3>Smartphone Motorola Moto G86 5g Tela 6,7 512gb</h3>
-
           <div class="product-info">
-            <span class="price">R$ 1.812,77 à vista no Pix</span>
-
-            <a target="_blank" rel="nofollow" href="https://www.mercadolivre.com.br/smartphone-moto-g86-5g-512gb-verde-escuro-motorola/p/MLB57856553?pdp_filters=item_id%3AMLB5744113346&matt_tool=38524122#origin=share&sid=share&wid=MLB5744113346&action=copy" class="store-link">
-              Mercado Livre
-            </a>
+            <span class="price">R$ 1.839,60 à vista no Pix</span>
+            <a target="_blank" rel="sponsored noopener noreferrer" href="https://meli.la/1E9DHxC" class="store-link">Mercado Livre</a>
           </div>
         </div>
-
       </div>
+
+      <!--SMART TV-->
+      <div id="smarttv" class="product-list">
+        <div class="product-item">
+          <div class="product-image-container">
+            <img src="./imagens/tv-32-tcl.webp" alt="Smart Tv 32 Polegadas Fhd 32s5k Qled Dolby Audio Tcl" class="product-thumb">
+          </div>
+          <h3>Smart Tv 32 Polegadas Fhd 32s5k Qled Dolby Audio Tcl</h3>
+          <div class="product-info">
+            <span class="price">R$ 1.066,03 à vista no Pix</span>
+            <a target="_blank" rel="sponsored noopener noreferrer" href="https://meli.la/2FhM6Bw" class="store-link">Mercado Livre</a>
+          </div>
+        </div>
+      </div>
+
+      <!--PC GAMER-->
+      <div id="pcgamer" class="product-list">
+        <div class="product-item">
+          <div class="product-image-container">
+            <img src="./imagens/pcgamer.webp" alt="PC Gamer Completo BluePC FORCE, AMD Ryzen 5, Radeon RX, 8GB DDR4, SSD 256GB" class="product-thumb">
+          </div>
+          <h3>PC Gamer Completo BluePC FORCE, AMD Ryzen 5, Radeon RX, 8GB DDR4, SSD 256GB, Fonte 500W, Monitor LED 20" - PGBP-FOR106</h3>
+          <div class="product-info">
+            <span class="price">R$ 2.584,06 à vista</span>
+            <a target="_blank" rel="sponsored noopener noreferrer" href="https://meli.la/2Q1ULDr" class="store-link">Mercado Livre</a>
+          </div>
+        </div>
+      </div>
+
+      <!--NOTEBOOK-->
+      <div id="notebook" class="product-list">
+        <div class="product-item">
+          <div class="product-image-container">
+            <img src="./imagens/Notebook ASUS Vivobook 15 M1502.webp" alt="Notebook ASUS Vivobook 15 M1502" class="product-thumb">
+          </div>
+          <h3>Notebook ASUS Vivobook 15 M1502, AMD Ryzen 7, 8 GB RAM, 512 GB SSD</h3>
+          <div class="product-info">
+            <span class="price">R$ 2.962,81 à vista no Pix</span>
+            <a target="_blank" rel="sponsored noopener noreferrer" href="https://meli.la/18fV9ox" class="store-link">Mercado Livre</a>
+          </div>
+        </div>
+      </div>
+
+
+
+
 
     </div>
   </section>
 
   <section class="about-site">
     <div class="container">
-
-      <h2>Promoção de Celular: Encontre Celular Barato com os Melhores Preços</h2>
+      <h2>Ofertas de Eletrônicos: Celulares, Notebooks, PCs Gamer e TVs com os Melhores Preços</h2>
 
       <p>
-        O Ofertas Celular reúne as melhores ofertas para quem deseja comprar celular com economia. Aqui você encontra promoção de celular atualizada diariamente, com opções de Samsung, iPhone, Xiaomi e Motorola nas principais lojas do Brasil.
+        O Ofertas Celular reúne as melhores ofertas para quem deseja economizar na compra de eletrônicos. Aqui você encontra promoções atualizadas diariamente de celulares, notebooks, PCs gamer, TVs e outros produtos de tecnologia das principais lojas do Brasil.
       </p>
 
       <p>
-        Nosso objetivo é ajudar você a encontrar celular barato sem perder tempo pesquisando em vários sites. Monitoramos ofertas constantemente para destacar oportunidades com ótimo custo-benefício e celular preço mais acessível.
+        Nosso objetivo é ajudar você a encontrar os melhores preços sem perder tempo pesquisando em diversos sites. Monitoramos ofertas constantemente para destacar oportunidades com excelente custo-benefício, descontos reais e condições especiais de compra.
       </p>
 
       <p>
-        Se você está procurando comprar celular pelo menor valor possível, acompanhe nossas atualizações diárias e descubra promoções reais, descontos exclusivos e ofertas limitadas em smartphones de diversas marcas.
+        Seja para comprar um smartphone, montar um setup gamer, adquirir um notebook para trabalho ou estudo, ou encontrar uma Smart TV com preço reduzido, você pode acompanhar nossas atualizações diárias e descobrir ofertas confiáveis em produtos das marcas mais procuradas do mercado.
       </p>
-      
     </div>
   </section>
 
@@ -306,6 +278,5 @@
   </footer>
 
   <script src="home.js"></script>
-
 </body>
 </html>

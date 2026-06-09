@@ -1,4 +1,4 @@
-* {
+/* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -237,4 +237,409 @@ footer {
     padding: 25px 0;
     color: #777;
     background: #181818;
+}*/
+
+
+
+/* ==========================================================================
+   1. RESET & CONFIGURAÇÕES GERAIS
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #1a1d20; /* Fundo grafite escuro premium */
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    /* Linhas diagonais sutis de fundo (efeito técnico/design) */
+    background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.01) 2px, transparent 2px, transparent 10px);
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Redefinição global de parágrafos */
+.container p {
+    color: #9aa0a6;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* ==========================================================================
+   2. HEADER & LOGO (Estilo Minimalista)
+   ========================================================================== */
+header {
+    padding: 30px 0;
+    background: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #22c55e; /* Verde Neon */
+}
+
+.donation-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.donation-text {
+    color: #9aa0a6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.copy-btn {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #22c55e;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+    background: #22c55e;
+    color: #1a1d20;
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+}
+
+.copy-message {
+    color: #22c55e;
+    font-size: 14px;
+    font-weight: 600;
+    display: none;
+}
+
+/* ==========================================================================
+   3. SEÇÃO INTRODUTÓRIA (Hero: Texto + Mascote Lado a Lado)
+   ========================================================================== */
+.title-site {
+    padding: 60px 0 20px 0;
+}
+
+/* Alinhamento dinâmico para colocar o H1 e a imagem do Mascote lado a lado */
+.title-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    position: relative;
+}
+
+/* Detalhe decorativo "— PROMOÇÕES" acima do título principal */
+.title-content::before {
+    content: "— SEJA BEM-VINDO(A)";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: #22c55e;
+    letter-spacing: 2px;
+}
+
+.title-content h1 {
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    flex: 1;
+}
+
+/* Estilo da imagem do mascote no topo */
+.hero-image {
+    max-width: 315px;
+    height: auto;
+    object-fit: contain;
+    animation: float 4s ease-in-out infinite; /* Efeito flutuante leve */
+}
+
+/* ==========================================================================
+   4. CATEGORIAS (Botões Retangulares Modificáveis)
+   ========================================================================== */
+.categories {
+    padding: 30px 0;
+}
+
+.category-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.category-buttons button {
+    background: transparent;
+    border: 1px solid #333942;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category-buttons button:hover {
+    background: #22c55e;
+    color: #1a1d20;
+    border-color: #22c55e;
+    box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3);
+}
+
+/* ==========================================================================
+   5. CAMPO DE PESQUISA (Search Bar)
+   ========================================================================== */
+.search-area {
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto 40px;
+}
+
+.search-area input {
+    width: 100%;
+    background: #23272c;
+    border: 1px solid #333942;
+    color: #ffffff;
+    padding: 18px 24px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.search-area input:focus {
+    border-color: #22c55e;
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.2);
+    background: #1e2125;
+}
+
+/* ==========================================================================
+   6. CARD DE AVISO (Warning Box)
+   ========================================================================== */
+.warning-text {
+    background: #23272c;
+    border: 1px solid #333942;
+    border-left: 4px solid #22c55e;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    color: #9aa0a6;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   7. LISTA DE PRODUTOS & GRID RESPONSIVO (Com Espaço para Foto)
+   ========================================================================== */
+.products {
+    padding-bottom: 60px;
+}
+
+.product-list {
+    display: none;
+}
+
+.product-list.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 25px;
+}
+
+.product-item {
+    background: #23272c;
+    border: 1px solid #333942;
+    padding: 25px;
+    border-radius: 18px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Linha sutil verde que acende no topo do card ao passar o rato */
+.product-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #22c55e;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-6px);
+    border-color: #404752;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.product-item:hover::before {
+    transform: scaleX(1);
+}
+
+/* Caixa interna para a Imagem do Produto */
+.product-image-container {
+    width: 100%;
+    height: 170px;
+    background: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    overflow: hidden;
+}
+
+.product-thumb {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Zoom elegante na foto do celular quando passa o rato no card */
+.product-item:hover .product-thumb {
+    transform: scale(1.06);
+}
+
+.product-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    border-top: 1px solid #333942;
+    padding-top: 20px;
+    margin-top: auto;
+}
+
+.price {
+    color: #22c55e;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.store-link {
+    background: #22c55e;
+    color: #1a1d20;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.store-link:hover {
+    background: #4ade80;
+    box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3);
+}
+
+/* ==========================================================================
+   8. SOBRE O SITE (SEO Text)
+   ========================================================================== */
+.about-site {
+    background: #1e2125;
+    padding: 80px 0;
+    border-top: 1px solid #333942;
+}
+
+.container h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.container h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #22c55e;
+    margin-top: 15px;
+}
+
+/* ==========================================================================
+   9. FOOTER & ANIMAÇÕES RESPONSIVAS
+   ========================================================================== */
+footer {
+    border-top: 1px solid #333942;
+    text-align: center;
+    padding: 35px 0;
+    color: #606770;
+    font-size: 14px;
+    font-weight: 500;
+    background: #1a1d20;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Responsividade para telemóveis */
+@media (max-width: 768px) {
+    .title-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding-top: 20px;
+    }
+    .title-content::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hero-image {
+        display: none;
+    }
 }
