@@ -1,5 +1,5 @@
 //Google tag (gtag.js)
-/*window.dataLayer = window.dataLayer || [];
+window.dataLayer = window.dataLayer || [];
 
 function gtag() {
   dataLayer.push(arguments);
@@ -7,4 +7,3 @@ function gtag() {
 
 gtag('js', new Date());
 gtag('config', 'G-Q524M0K7JR');
-*/
