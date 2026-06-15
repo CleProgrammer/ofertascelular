@@ -32,7 +32,7 @@
 
   <url>
     <loc>https://ofertascelular.com.br/celulares/melhor-celular-custo-beneficio-2026</loc>
-    <lastmod>2026-06-12</lastmod>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -40,6 +40,13 @@
   <url>
     <loc>https://ofertascelular.com.br/computadores/pc-gamer-completo</loc>
     <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://ofertascelular.com.br/computadores/mesa-para-computador</loc>
+    <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
